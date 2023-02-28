@@ -48,30 +48,18 @@
               <li><a class="dropdown-item" href="#">Timisoara</a></li>
               <li><a class="dropdown-item" href="#">Oradea</a></li>
               <li><a class="dropdown-item" href="#">Brasov</a></li>
-              <li><a class="dropdown-item" href="#">Bucuresti</a></li>
+              <li><a class="dropdown-item" href="#">Baciu</a></li>
               <li><a class="dropdown-item" href="#">Piatra-Neamt</a></li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="current-weather">
+      <section class="py-3 weather-bg">
         <div class="container">
           <h2 class="text-center">Vremea curenta</h2>
-          <div class="d-flex justify-content-evenly">
-            <div class="px-3">
-              <div class="fs-2 mb-2"><strong>Cluj</strong></div>
-              <div class="f2-3"><strong>Joi</strong>, 18:20</div>
-              <div>
-                <strong>9°C</strong>
-                <img src="" alt="" />
-              </div>
-            </div>
-            <div class="px-3">
-              <p class="fs-5">Se simte ca <strong>10°C</strong></p>
-              <p class="fs-5">Putin innorat</p>
-              <p class="fs-5">Viteza vantului: <strong>15 km/h</strong></p>
-            </div>
-          </div>
+          <div
+            class="current-weather d-flex justify-content-evenly align-items-center"
+          ></div>
         </div>
       </section>
     </main>
@@ -88,6 +76,12 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+
+    <script src="/services/utils.js"></script>
+    <script src="/services/weatherService.js"></script>
+    <script src="/utils/weather.js"></script>
+    <script src="/sections/currentWeather.js"></script>
+    <script src="/utils/date.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>

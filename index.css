@@ -3,6 +3,7 @@
     --secondary: #588157 ;
     --bg-primary: #e0afa0 ;
     --bg-secondary: #f4f3ee;
+    --bg-third: #e3d5ca;
 
     --btn-color: #778da9;
     --btn-hover: #2e6f95;
@@ -11,6 +12,10 @@
 .btn-secondary{
 background-color: var(--btn-color);
 border-color: var(--btn-color);
+}
+
+.weather-bg{
+    background-color: var(--bg-third);
 }
 
 .btn.show,
