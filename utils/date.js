@@ -23,6 +23,13 @@ switch(day){
 }
 }
 
+function numberWithZero(nr) {
+    if (nr < 10) {
+        return `0${nr}`
+    }
+    return nr;
+}
+
 function getHour(utc) {
     const date = new Date(utc * 1000);
     const hours = date.getHours();

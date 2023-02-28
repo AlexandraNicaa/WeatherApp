@@ -25,6 +25,8 @@ border-color: var(--btn-color);
     border-color: var(--btn-hover);
 }
 
+
+
 .text-primary{
 color: var(--primary) !important;
 }
