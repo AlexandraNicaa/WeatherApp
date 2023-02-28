@@ -47,7 +47,7 @@ async function displayCurrentWeather(city) {
         <div class="px-3">
           <p class="fs-5">Se simte ca <strong>${realFeel}</strong></p>
           <p class="fs-5">${weatherDescription}</p>
-          <p class="fs-5">Viteza vantului: <strong>${windSpeed}</strong></p>
+          <p class="fs-5">Viteza vantului: <strong>${windSpeed} km/h</strong></p>
         </div>
       </div>`
     };
