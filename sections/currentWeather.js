@@ -1,9 +1,8 @@
 async function displayCurrentWeather(city) {
     const CurrentWeatherData = await getCurrentWeather (city);
-    getCurrentWeather("Cluj").then(CurrentWeatherData=> {
-    
+   
         // afisam orasul
-        "Cluj";
+        // "Cluj";
     
         const { dt, main, weather, wind, name } = CurrentWeatherData;
         const day = getDayOfTheWeek(dt);
@@ -51,6 +50,5 @@ async function displayCurrentWeather(city) {
           <p class="fs-5">Viteza vantului: <strong>${windSpeed}</strong></p>
         </div>
       </div>`
-    });
+    };
     
-}

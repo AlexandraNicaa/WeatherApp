@@ -12,5 +12,5 @@ const DEFAULT_QUERY_PARAMETERS = `lang=ro&units=metric&appid=${API_KEY}`;
 
 function getCurrentWeather(city) {
     // construim link-ul (endPointuri) catre cererea de current weather folosind info predefinite
-   return fetchAndParse (`${API_URL}/weather?q=Cluj&${DEFAULT_QUERY_PARAMETERS}`)
+   return fetchAndParse (`${API_URL}/weather?q=${city}&${DEFAULT_QUERY_PARAMETERS}`)
 }
