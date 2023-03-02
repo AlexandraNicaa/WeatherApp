@@ -39,7 +39,8 @@ color: var(--primary) !important;
 
 
 h1, 
-h2 {
+h2,
+h3 {
     font-weight: bold;
 }
 
@@ -72,4 +73,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.weather-forecast-box p {
+    margin: 0;
+}
+
+/* stilizari pentru mobile */
+@media (max-width:576px) {
+    .weather-forecast-box .real-feel {
+        display: none;
+    }
 }

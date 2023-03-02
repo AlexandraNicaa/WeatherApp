@@ -1,36 +1,19 @@
 async function displayCurrentWeather(city) {
     const CurrentWeatherData = await getCurrentWeather (city);
-   
-        // afisam orasul
-        // "Cluj";
-    
+
         const { dt, main, weather, wind, name } = CurrentWeatherData;
         const day = getDayOfTheWeek(dt);
         const hours = getHour(dt);
-    
-        // data la care s-a facut cererea
-        // dt, format UTC
-        
-        // gradele in celsius
-        // main.temp
+
         const temperature = Math.round(main.temp);
-    
-    
-        // iconita vremii
-        // weather.icon
-        const weatherIcon = getWeatherIcon(weather[0].icon);
-        
-        // se simte ca ...
-        // main.feels_like
+        const weatherIcon = getWeatherIcon(weather[0].icon);       
         const realFeel = Math.round(main.feels_like);
     
-        // descrierea vremii
-        // weather.description
+      
         // atentie weather este un array care are un singur element
         const weatherDescription = weather[0].description;
     
-        // viteza vantului
-        // wind.speed  ATENTIE primim m/sec 
+        // ATENTIE primim m/sec 
         const windSpeed = Math.round(windToKmPerHour(wind.speed));
 
         const currentWeatherElement = document.querySelector(".current-weather");
@@ -51,4 +34,5 @@ async function displayCurrentWeather(city) {
         </div>
       </div>`
     };
+    
     

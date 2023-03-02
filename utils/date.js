@@ -30,9 +30,13 @@ function numberWithZero(nr) {
     return nr;
 }
 
+console.log(numberWithZero);
+
 function getHour(utc) {
     const date = new Date(utc * 1000);
     const hours = date.getHours();
     const minutes = date.getMinutes();
     return `${hours}:${minutes}`
 }
+
+

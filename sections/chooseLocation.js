@@ -19,6 +19,7 @@ function updateWeather(city) {
 
     updateCurrentCity(city);
     displayCurrentWeather(city);
+    displayWeatherForecast(city);
 }
 
 // adding event listeners for items in dropdown
