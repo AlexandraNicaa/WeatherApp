@@ -6,6 +6,9 @@ const oradea = document.querySelector(".dropdown-item.oradea");
 const brasov = document.querySelector(".dropdown-item.brasov");
 const baciu = document.querySelector(".dropdown-item.baciu");
 const piatraNeamt = document.querySelector(".dropdown-item.piatra-neamt");
+const bucuresti = document.querySelector(".dropdown-item.bucuresti");
+const arad = document.querySelector(".dropdown-item.arad");
+const iasi = document.querySelector(".dropdown-item.iasi");
 
 function updateCurrentCity(city) {
     // selectam tag-ul care contine orasul principal
@@ -53,4 +56,16 @@ baciu.addEventListener("click", function() {
 
 piatraNeamt.addEventListener("click", function() {
     updateWeather("Piatra-Neamt");
+})
+
+bucuresti.addEventListener("click", function() {
+    updateWeather("București");
+})
+
+arad.addEventListener("click", function() {
+    updateWeather("Arad");
+})
+
+iasi.addEventListener("click", function() {
+    updateWeather("Iasi");
 })
