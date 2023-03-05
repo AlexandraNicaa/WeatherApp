@@ -35,7 +35,7 @@ console.log(numberWithZero);
 function getHour(utc) {
     const date = new Date(utc * 1000);
     const hours = date.getHours();
-    const minutes = date.getMinutes();
+    const minutes = numberWithZero(date.getMinutes());
     return `${hours}:${minutes}`
 }
 
